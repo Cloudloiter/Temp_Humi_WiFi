@@ -1,0 +1,28 @@
+# Keil MDK 编译产物（每次编译都会重新生成，不进版本库）
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/*.uvguix.*
+*.uvguix.*
+
+# 私有配置：真实 WiFi 密码和电脑 IP（绝不入库！）
+Core/Inc/wifi_real.h
+
+# 编译中间文件
+*.o
+*.d
+*.crf
+*.lnp
+*.dep
+*.axf
+*.lst
+*.htm
+*.map
+*.bak
+JLinkLog.txt
+*.scvd
+
+# 系统文件
+Thumbs.db
+Desktop.ini
