@@ -60,6 +60,7 @@ Temp_Humi_WiFi/
 
 ## 如何编译
 
+0. **先配置 WiFi（必做）**：本仓库不含真实 WiFi 密码（安全原因）。复制 `Core/Inc/wifi_real_template.h` 重命名为 `wifi_real.h`，填入你自己的 WiFi 名称、密码和接收端电脑 IP。该文件已被 `.gitignore` 排除，不会被上传
 1. 用 Keil5 MDK-ARM 打开 `MDK-ARM/Temp_Humi_WiFi.uvprojx`
 2. 按 F7 编译（需安装 STM32F1 HAL 库包）
 3. 用 ST-Link 烧录到 STM32F103C8T6
